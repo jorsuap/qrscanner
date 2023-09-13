@@ -1,0 +1,12 @@
+
+<ion-content [fullscreen]="true">
+  <swiper-container>
+    <swiper-slide>
+      <ion-button (click)="scan()"
+                  fill="outline"
+                  size="large"
+                  shape="round"
+                  [disabled]="!isSupported">{{ !isSupported ? 'Scanner no Soportado' : 'Scanner'  }}</ion-button>
+      </swiper-slide>
+    </swiper-container>
+</ion-content>
